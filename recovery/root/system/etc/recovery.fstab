@@ -43,6 +43,9 @@ odm		/odm		ext4	ro,barrier=1			wait,logical,first_stage_mount
 # external SD card
 /dev/block/mmcblk1p1				/sdcard		vfat	defaults		recoveryonly
 
+# USB OTG
+/dev/block/sdf1	                                /sdf1           auto    defaults                recoveryonly
+
 # FOTA
 /dev/block/platform/bootdevice/by-name/apnhlos	/modem		emmc	defaults		recoveryonly
 /dev/block/platform/bootdevice/by-name/modem	/mdm		emmc	defaults		recoveryonly
