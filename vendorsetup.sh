@@ -1,3 +1,16 @@
+set -o xtrace
+
+alias python="python2"
+export ALLOW_MISSING_DEPENDENCIES=true
+export FOX_BUILD_DEVICE="$selected_device"
+export LC_ALL="C"
+
+if [ -f /usr/bin/ccache ]; then
+  export USE_CCACHE=1
+  export CCACHE_EXEC=/usr/bin/ccache
+  ccache -M 50G
+fi
+
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/platform/bootdevice/by-name/recovery"
 export OF_FORCE_PREBUILT_KERNEL=1
