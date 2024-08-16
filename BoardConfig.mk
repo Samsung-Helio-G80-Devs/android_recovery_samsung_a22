@@ -133,8 +133,12 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
 TW_MAX_BRIGHTNESS := 306
 TW_DEFAULT_BRIGHTNESS := 200
+
+####### MAKE SURE TO COMMENT THEM WHEN BUILDING ORANGEFOX ##############
 TW_Y_OFFSET := 50
 TW_H_OFFSET := -50
+########################################################################
+
 TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_USE_NEW_MINADBD := true
