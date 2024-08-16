@@ -11,7 +11,7 @@ if [ -f /usr/bin/ccache ]; then
   ccache -M 50G
 fi
 
-export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=0
+export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/platform/bootdevice/by-name/recovery"
 export OF_FORCE_PREBUILT_KERNEL=1
 export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
@@ -26,7 +26,7 @@ export OF_USE_TWRP_SAR_DETECT=1
 export FOX_DISABLE_UPDATEZIP=0
 export OF_MAINTAINER="Zears & david7xw"
 export OF_SCREEN_H="2400"
-export OF_STATUS_H="57"
+export OF_STATUS_H="75"
 export OF_STATUS_INDENT_LEFT="48"
 export OF_STATUS_INDENT_RIGHT="48"
 export OF_CLOCK_POS=1
@@ -42,6 +42,7 @@ export FOX_USE_SED_BINARY=1
 export FOX_USE_LZ4_BINARY=1
 export FOX_USE_ZSTD_BINARY=1
 export FOX_USE_GREP_BINARY=1
+export OF_ENABLE_LPTOOLS=1
 export FOX_VERSION="R11.1"
 export OF_FLASHLIGHT_ENABLE=0
 export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
