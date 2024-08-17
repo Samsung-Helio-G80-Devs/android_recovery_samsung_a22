@@ -1,4 +1,4 @@
-set -o xtrace
+#set -o xtrace
 
 alias python="python2"
 export ALLOW_MISSING_DEPENDENCIES=true
