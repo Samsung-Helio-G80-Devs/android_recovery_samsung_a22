@@ -49,6 +49,7 @@ export TW_DEFAULT_LANGUAGE="en"
 export OF_HIDE_NOTCH=1
 export OF_SKIP_FBE_DECRYPTION=1
 export FOX_DELETE_AROMAFM=1
+export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
 if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
 	 export | grep "FOX" >> $FOX_BUILD_LOG_FILE
 	 export | grep "OF_" >> $FOX_BUILD_LOG_FILE
