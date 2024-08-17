@@ -10,7 +10,13 @@ if [ -f /usr/bin/ccache ]; then
   export CCACHE_EXEC=/usr/bin/ccache
   ccache -M 50G
 fi
+if [[ "${BASH_SOURCE[0]}" != "${0}" ]]; then
+    script_path=$(dirname "$(realpath "${BASH_SOURCE[0]}")")
+else
+    script_path=$(dirname "$(realpath "$0")")
+fi
 
+export FOX_USE_SPECIFIC_MAGISK_ZIP=$script_path/magisk/Magisk-v27.0.zip
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/platform/bootdevice/by-name/recovery"
 export OF_FORCE_PREBUILT_KERNEL=1
