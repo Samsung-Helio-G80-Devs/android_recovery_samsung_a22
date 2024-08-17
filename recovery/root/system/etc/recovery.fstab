@@ -68,7 +68,7 @@ odm		/odm		ext4	ro,barrier=1			wait,logical,first_stage_mount
 /dev/block/platform/bootdevice/by-name/pi_img	/pi_img		emmc	default			recoveryonly
 
 # Dynamic Partitions
-/odm_image     emmc     /dev/block/by-name/odm     flags=backup=1;flashimg=1;display="Odm image";wipeingui
-/product_image     emmc     /dev/block/by-name/product     flags=backup=1;flashimg=1;display="Product image";wipeingui
-/system_image     emmc     /dev/block/by-name/system     flags=backup=1;flashimg=1;display="System image";wipeingui
-/vendor_image     emmc     /dev/block/by-name/vendor     flags=backup=1;flashimg=1;display="Vendor image";wipeingui
+/odm_image     emmc     /dev/block/by-name/odm     flags=backup=1;flashimg=1;display="Odm Image";wipeingui
+/product_image     emmc     /dev/block/by-name/product     flags=backup=1;flashimg=1;display="Product Image";wipeingui
+/system_image     emmc     /dev/block/by-name/system     flags=backup=1;flashimg=1;display="System Image";wipeingui
+/vendor_image     emmc     /dev/block/by-name/vendor     flags=backup=1;flashimg=1;display="Vendor Image";wipeingui
