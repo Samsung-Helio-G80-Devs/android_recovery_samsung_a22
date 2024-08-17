@@ -66,3 +66,9 @@ odm		/odm		ext4	ro,barrier=1			wait,logical,first_stage_mount
 /dev/block/platform/bootdevice/by-name/cam_vpu2	/cam_vpu2	emmc	default			recoveryonly
 /dev/block/platform/bootdevice/by-name/cam_vpu3	/cam_vpu3	emmc	default			recoveryonly
 /dev/block/platform/bootdevice/by-name/pi_img	/pi_img		emmc	default			recoveryonly
+
+# Dynamic Partitions
+/odm_image     emmc     /dev/block/by-name/odm     flags=backup=1;flashimg=1;display="Odm image"
+/product_image     emmc     /dev/block/by-name/product     flags=backup=1;flashimg=1;display="Product image"
+/system_image     emmc     /dev/block/by-name/system     flags=backup=1;flashimg=1;display="System image"
+/vendor_image     emmc     /dev/block/by-name/vendor     flags=backup=1;flashimg=1;display="Vendor image"
